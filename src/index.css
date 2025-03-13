@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary : #276cc6;
+  --color-primary-hover : #2a5e92;
+  --color-secondary: #4f5153;
+  --color-secondary-hover: #6a7072;
+  --color-white: #ffffff;
+  --color-mono100: #f1f1f1;
+  --color-mono200: #bebebe;
+  --color-mono300: #d6d7d9;
+  --color-error: #d01e1e;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+body {
+  letter-spacing: -1;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+h2 {
+  margin: 0 0 4px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #4f5153;
+}
+
+input {
+  @apply 
+  block w-full 
+  rounded-md 
+  bg-white px-3 py-1.5 text-base 
+  text-secondary 
+  outline-mono300 outline-1 -outline-offset-1 
+  placeholder:text-gray-400 
+  focus:outline-2 focus:-outline-offset-2 focus:outline-mono300 focus:border-none sm:text-sm/6;
+}
+
+a {
+  @apply 
+  font-bold 
+  text-secondary 
+  hover:text-secondary-hover tracking-tighter
+}
+
+button {
+  @apply 
+  cursor-pointer 
+  flex w-full 
+  justify-center 
+  rounded-md 
+  px-3 py-2 
+  text-sm/6 
+  font-semibold 
+  text-white shadow-xs
+  focus-visible:outline-2 focus-visible:outline-offset-2
+}
