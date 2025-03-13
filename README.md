@@ -2,7 +2,7 @@
 로그인 인증 흐름을 보여주는 간단한 샘플입니다. 자세한 API 명세는 GPKI 가이드를 참고해주세요.
 
 ## 세팅
-- 샘플 프로젝트를 사용하려면 Node.js 18.0.0 이상의 버전이 필요합니다. 
+샘플 프로젝트를 사용하려면 Node.js 18.0.0 이상의 버전이 필요합니다. 
 ```
 node -v
 ```
@@ -10,10 +10,10 @@ node -v
 ## 실행
 
    ```sh
-   $ git clone https://github.com/privateSaasOperationSupportCenter
-   $ cd gpki-saas-sample
+   $ git clone https://github.com/privateSaasOperationSupportCenter/gpki-sample.git
+   $ cd gpki-sample
    $ npm i
-   $ npm run dev 
+   $ npm run dev
    ```
 
 ## 인증 흐름
